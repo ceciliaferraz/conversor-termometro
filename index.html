@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura Profissional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Temperatura</h1>
+        <p class="subtitle">Precisão e elegância para o seu dia a dia</p>
+
+        <!-- Conversão 1: Fahrenheit para Celsius -->
+        <div class="converter-section">
+            <label for="fahrenheit">Fahrenheit para Celsius:</label>
+            <input type="number" id="fahrenheit" placeholder="Ex: 100.4" step="0.1">
+            <div class="result-display">
+                <span id="celsiusResult">-- °C</span>
+            </div>
+            <p id="alertMessageF" class="alert"></p>
+        </div>
+
+        <hr class="divider">
+
+        <!-- Conversão 2: Celsius para Fahrenheit -->
+        <div class="converter-section" style="margin-top: 20px;">
+            <label for="celsius">Celsius para Fahrenheit:</label>
+            <input type="number" id="celsius" placeholder="Ex: 38.0" step="0.1">
+            <div class="result-display">
+                <span id="fahrenheitResult">-- °F</span>
+            </div>
+            <p id="alertMessageC" class="alert"></p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <span>Desenvolvido por <a href="https://github.com/ceciliaferraz" target="_blank" class="social-link">Cecília Ferraz</a></span>
+            <span class="separator">&bull;</span>
+            <div class="social-links">
+                <a href="https://github.com/ceciliaferraz" target="_blank" class="badge-link">GitHub</a>
+                <a href="https://www.linkedin.com/in/ceciliasferraz/" target="_blank" class="badge-link">LinkedIn</a>
+            </div>
+        </div>
+        <div class="counter-container">
+            <!-- Contador com novo path para começar do zero -->
+            <img src="https://api.visitorbadge.io/api/combined?path=ceciliaferraz.conversor-termometro-v2&countColor=%233b82f6" alt="Contador de Visitas" style="vertical-align: middle; height: 16px;">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
